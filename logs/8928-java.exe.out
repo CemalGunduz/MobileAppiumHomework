@@ -1,0 +1,67 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 581milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 581"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 64216"}
+{"logLevel":"info","message":"Listening on port:64216"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'BasePage.swipeUp' and 'BasePage.swipeUp'"}
+{"logLevel":"debug","message":"Found Swipe {} times the page up in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.typeTextThatElementWithId' and 'BasePage.typeTextThatElementWithId'"}
+{"logLevel":"debug","message":"Found Type that {} to element with that id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.clickById' and 'BasePage.clickById'"}
+{"logLevel":"debug","message":"Found Click element with that id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.chooseSizeFromList' and 'BasePage.chooseSizeFromList'"}
+{"logLevel":"debug","message":"Found Choose size from product page's {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.chooseRandomWithResourceId' and 'BasePage.chooseRandomWithResourceId'"}
+{"logLevel":"debug","message":"Found Choose random product from RecyclerView with {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.clickByCssSelector' and 'BasePage.clickByCssSelector'"}
+{"logLevel":"debug","message":"Found Click element with that cssSelector {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.clickByXpath' and 'BasePage.clickByXpath'"}
+{"logLevel":"debug","message":"Found Click element with that xPath {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.waitForSeconds' and 'BasePage.waitForSeconds'"}
+{"logLevel":"debug","message":"Found Wait {} seconds in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tClick element with that id {} : public void clickById(String selectorId)"}
+{"logLevel":"debug","message":"\tClick element with that cssSelector {} : public void clickByCssSelector(String cssLocator)"}
+{"logLevel":"debug","message":"\tClick element with that xPath {} : public void clickByXpath(String xPath)"}
+{"logLevel":"debug","message":"\tSwipe {} times the page up : public void swipeUp(ınt number)"}
+{"logLevel":"debug","message":"\tType that {} to element with that id {} : public void typeTextThatElementWithId(String text, String selectorId)"}
+{"logLevel":"debug","message":"\tChoose random product from RecyclerView with {} : public void chooseRandomWithResourceId(String resourceId)"}
+{"logLevel":"debug","message":"\tChoose size from product page's {} : public void chooseSizeFromList(String sizeListElement)"}
+{"logLevel":"debug","message":"\tWait {} seconds : public void waitForSeconds(Integer time) throws InterruptedException"}
+Ara 06, 2021 3:24:40 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 5 seconds.
+{"logLevel":"debug","message":"Executing 'Click element with that id {}' using 'class BasePage.clickById"}
+com.ozdilek.ozdilekteyim:id/tv_startShoppingStore <-- element clicked.
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 3 seconds.
+{"logLevel":"debug","message":"Executing 'Click element with that id {}' using 'class BasePage.clickById"}
+com.ozdilek.ozdilekteyim:id/nav_categories <-- element clicked.
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 3 seconds.
+{"logLevel":"debug","message":"Executing 'Click element with that xPath {}' using 'class BasePage.clickByXpath"}
+/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.RelativeLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2] <-- element clicked.
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 3 seconds.
+{"logLevel":"debug","message":"Executing 'Click element with that xPath {}' using 'class BasePage.clickByXpath"}
+/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[4] <-- element clicked.
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 3 seconds.
+{"logLevel":"debug","message":"Executing 'Choose random product from RecyclerView with {}' using 'class BasePage.chooseRandomWithResourceId"}
+Catalog pictures size: 4
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 3 seconds.
+{"logLevel":"debug","message":"Executing 'Choose size from product page's {}' using 'class BasePage.chooseSizeFromList"}
+SizeList element count: 4
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

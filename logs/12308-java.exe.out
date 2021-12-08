@@ -1,0 +1,55 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+{"logLevel":"debug","message":"gauge-java took 730milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 730"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 61609"}
+{"logLevel":"info","message":"Listening on port:61609"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'DetailedProductPage.controlIsDetailedProductPageOpened' and 'DetailedProductPage.controlIsDetailedProductPageOpened'"}
+{"logLevel":"debug","message":"Found Control: Is Detailed Product Page opened ? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.swipeUp' and 'BasePage.swipeUp'"}
+{"logLevel":"debug","message":"Found Swipe {} times the page up in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.typeTextThatElementWithId' and 'BasePage.typeTextThatElementWithId'"}
+{"logLevel":"debug","message":"Found Type that {} to element with that id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.clickById' and 'BasePage.clickById'"}
+{"logLevel":"debug","message":"Found Click element with that id {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.controlIsApplicationUp' and 'BasePage.controlIsApplicationUp'"}
+{"logLevel":"debug","message":"Found Control: Is Application up ? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.chooseSizeFromList' and 'BasePage.chooseSizeFromList'"}
+{"logLevel":"debug","message":"Found Choose size from product page's id of {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'LoginPage.controlIsApplicationUp' and 'LoginPage.controlIsApplicationUp'"}
+{"logLevel":"debug","message":"Found Control: Is Login Page opened ? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.chooseRandomWithResourceId' and 'BasePage.chooseRandomWithResourceId'"}
+{"logLevel":"debug","message":"Found Choose random product from RecyclerView with {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StorePage.controlStoreIsOpened' and 'StorePage.controlStoreIsOpened'"}
+{"logLevel":"debug","message":"Found Control: Is Store opened ? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.clickByClassName' and 'BasePage.clickByClassName'"}
+{"logLevel":"debug","message":"Found Click element with that text {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'BasePage.waitForSeconds' and 'BasePage.waitForSeconds'"}
+{"logLevel":"debug","message":"Found Wait {} seconds in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tControl: Is Detailed Product Page opened ? : public void controlIsDetailedProductPageOpened()"}
+{"logLevel":"debug","message":"\tControl: Is Login Page opened ? : public void controlIsApplicationUp()"}
+{"logLevel":"debug","message":"\tClick element with that id {} : public void clickById(String selectorId)"}
+{"logLevel":"debug","message":"\tClick element with that text {} : public void clickByClassName(String textName)"}
+{"logLevel":"debug","message":"\tControl: Is Store opened ? : public void controlStoreIsOpened()"}
+{"logLevel":"debug","message":"\tSwipe {} times the page up : public void swipeUp(ınt number)"}
+{"logLevel":"debug","message":"\tType that {} to element with that id {} : public void typeTextThatElementWithId(String text, String selectorId)"}
+{"logLevel":"debug","message":"\tChoose random product from RecyclerView with {} : public void chooseRandomWithResourceId(String resourceId)"}
+{"logLevel":"debug","message":"\tChoose size from product page's id of {} : public void chooseSizeFromList(String sizeListElement)"}
+{"logLevel":"debug","message":"\tControl: Is Application up ? : public void controlIsApplicationUp()"}
+{"logLevel":"debug","message":"\tWait {} seconds : public void waitForSeconds(ınt time) throws InterruptedException"}
+Ara 07, 2021 1:46:40 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class BasePage.waitForSeconds"}
+Waited 2 seconds.
+{"logLevel":"debug","message":"Executing 'Control: Is Application up ?' using 'class BasePage.controlIsApplicationUp"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

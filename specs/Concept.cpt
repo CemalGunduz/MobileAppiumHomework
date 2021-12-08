@@ -1,0 +1,52 @@
+Created by testinium on 8.12.2021
+
+# Check: Application is running ?
+*   Wait "5" seconds
+*   Control: Is Application up ?
+
+# Click Store button as 'Alışverişe Başla' and check it is entered
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore"
+*   Wait "3" seconds
+*   Control: Is Store opened ?
+
+# Go to Categories as 'Kategoriler', Woman as 'Kadın', Pants as 'Pantolon', in order.
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/nav_categories"
+*   Wait "3" seconds
+*   Click element with that text "Kadın"
+*   Wait "3" seconds
+*   Click element with that text "Pantolon"
+
+# Swipe page <number> times up and choose random product given recycle list, check user in detailed product page
+*   Wait "3" seconds
+*   Swipe <number> times the page up
+*   Wait "3" seconds
+*   Choose random product from RecyclerView with "com.ozdilek.ozdilekteyim:id/imageView"
+*   Wait "3" seconds
+*   Control: Is Detailed Product Page opened ?
+
+# Add favorite, check user is in Login Page and enter login requirements
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/imgFav"
+*   Wait "3" seconds
+*   Control: Is Login Page opened ?
+*   Wait "2" seconds
+*   Type that "example@mail.com" to element with that id "com.ozdilek.ozdilekteyim:id/etEposta"
+*   Wait "3" seconds
+*   Type that "password1234" to element with that id "com.ozdilek.ozdilekteyim:id/etPassword"
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/btnLogin"
+
+# Go back two times, choose random product given recycle list and add to cart
+*   Wait "5" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/ivBack"
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/ivBack"
+*   Wait "3" seconds
+*   Choose random product from RecyclerView with "com.ozdilek.ozdilekteyim:id/imageView"
+*   Wait "3" seconds
+*   Choose size from product page's id of "com.ozdilek.ozdilekteyim:id/relLaySizeIn"
+*   Wait "3" seconds
+*   Click element with that id "com.ozdilek.ozdilekteyim:id/relLayAddCartBtn"
+*   Wait "6" seconds
